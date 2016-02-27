@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"><!-- Latest compiled and minified CSS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script><!-- jQuery library -->
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><!-- Latest compiled JavaScript -->
+    <script src="elecboard.js"></script>
     <style>
     /*body {
      font: 20px Montserrat, sans-serif;
@@ -59,8 +60,7 @@
 
   <body onload="main()">
 <!-- Searcching Bar -->
-  <div class="container">
-<p></P>
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
   <div style="position:relative; top: 20px;"class="input-group">
@@ -74,19 +74,18 @@
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
       </button>
-      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span></a>
+      <a class="navbar-brand" href="homepage.html"><span class="glyphicon glyphicon-home"></span></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><div class="glyphicon glyphicon-user"></div> Sign Up</a></li>
-        <li><a href="#"><div class="glyphicon glyphicon-log-in"></div> Login</a></li>
+        <li><a href="#"><div class="glyphicon glyphicon-user" onclick="mySignUp()"></div> Sign Up</a></li>
+        <li><a href="#"><div class="glyphicon glyphicon-log-in" onclick="myLogin()"></div> Login</a></li>
       </ul>
     </div>
   </div>
 </nav>
-  </div>
 <!-- <div class="container">
   <p></p>
   <img src="logo.png" alt="logo" width="103" height="82"> <!-- 257*206 -->
@@ -163,7 +162,7 @@
       <p><b>Hillary Clinton's Secret Weapon Is Bernie Sander's Colleagues</b>
       <p><i>By Tim Murphy Mother Jones | Feb. 6, 2016</i></p>
       <p>Sen Al Franken (D-­Minn.) opened for Hillary Clinton Saturday night in Portsmouth with one very important message: she's good enough, she's smart enough, and doggone it …</p>
-      <P><a href="https://www.hillaryclinton.com/issues/alzheimers-disease/">Read More</a></p></p> <!-- TODO:  -->
+      <P><a href="news.html">Read More</a></p></p> <!-- TODO:  -->
 
       <p><b>As Clinton-Sanders Fight Escalates, Female Voters Consider Issues, Symbolism</b>
       <p><i>By Patrick Condon Star Tribune | Feb. 5, 2016</i><p>

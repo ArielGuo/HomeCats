@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Search Result of News</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="elecboard.js"></script>
+    <style>
+    .navbar-default {
+        background-color: #B6D296;
+        border-color: #B6D296;
+    }
+    .navbar-default .navbar-brand {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-brand:hover,
+    
+    .navbar-default .navbar-brand:focus {
+        color: #ecdbff;
+    }
+    .navbar-default .navbar-text {
+        color: #ffffff;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #ffffff;
+    }
+    #searchbar {
+        height: 30px;
+        width: 400px;
+        position: absolute;
+        left: 100px;
+        top: -10px;
+    }
+    #searchbutton {
+        height: 30px;
+        position:absolute;
+        left:500px;
+        top: -10px;
+        background-color: white;
+        color: #B6D296;
+    }
+    div.container {
+        width=90%;
+    }
+    img{
+        position: relative;
+        float: left;
+    }
+    img.logo{
+        width: 102px;
+        height: 77px;
+    }
+    img.photo{
+        width: 112px;
+        height: 140px;
+    }
+    button.btn {
+        background-color: #B6D296;
+        color: white;
+    }
+    div.newsresult {
+        padding-top: 15px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 1px solid #B6D296;
+        margin: 20px;
+    }
+    div.newshead {
+        position:relative;
+        top: 0px;
+    }
+    h5.AuthorInfo {
+        text-align:right;
+    }
+    div.btn-group {
+        position:relative;
+        float:right;
+    }
+    </style>
+</head>
+    
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div style="position:relative; top: 20px;"class="input-group">
+                <input type="text" class="form-control" id="searchbar" placeholder="Women and Children">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" id="searchbutton">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                </button>
+                <a class="navbar-brand" href="homepage.html"><span class="glyphicon glyphicon-home"></span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user" onclick="mySignUp()"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in" onclick="myLogin()"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+        
+        <div class="newsresult">
+            <div class="row">
+                <div class="col-md-2">
+                    <img class="photo" src="../img/Hillary_Clinton.jpg">
+                </div>
+                <div class="col-md-10">
+                    <div class="newshead">
+                        <a href="News.html">
+                            <h2 >As Clinton-Sanders Fight Escalates, Female Voters Consider Issues, Symbolism</h2>
+                        </a>
+                        <h5 class="AuthorInfo">By Patrick Condon <span style="color: #B8B8B8;">Star Tribune | Feb. 5, 2016</span> </h5>
+                    </div>
+                </div>
+            </div>
+            <p>Hillary Clinton needs people like Emily Jensen if she’s going to win the White House. But Jensen, a young DFL activist, is striving to elect Clinton’s rival for the Democratic presidential nomination...</p>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-xs">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>(286)
+                </button>
+                <button type="button" class="btn btn-default btn-xs">Comment(206)</button>
+            </div>
+        </div>
+        
+        <div class="newsresult">
+            <div class="row">
+                <div class="col-md-2">
+                    <img class="photo" src="../img/Bernie_Sanders.jpg">
+                </div>
+                <div class="col-md-10">
+                    <div class="newshead">
+                        <a href="News.html">
+                            <h2 href="">Bernie Sanders: Violence Against Women Act Applies to Men and Gays, Too</h2>
+                        </a>
+                        <h5 class="AuthorInfo">By Susan Smith <span style="color: #B8B8B8;">CNN | Feb. 1, 2016</span></h5>
+                    </div>
+                </div>
+            </div>
+            <p>The rates of sexual and domestic violence against women in this country are both shocking and tragic. Bernie believes that the rates of sexual and domestic violence against …</p>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-xs">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>(137)
+                </button>
+                <button type="button" class="btn btn-default btn-xs">Comment(93)</button>
+            </div>
+        </div>
+
+
+        <div class="newsresult">
+            <div class="row">
+                <div class="col-md-2">
+                    <img  class="photo" src="../img/Donald_Trump.jpg">
+                </div>
+                <div class="col-md-10">
+                    <div class="newshead">
+                        <a href="News.html">
+                            <h2 href="">Donald Trump: Planned Parenthood Helps Women With Breast Cancer. But Abortion Causes It</h2>
+                        </a>
+                        <h5 class="AuthorInfo">By Steven Ertelt <span style="color: #B8B8B8;">LifeNews | Feb. 26, 2016</span></h5>
+                    </div>
+                </div>
+            </div>
+            <p>During last nights Republican presidential debate, Donald Trump drew criticism from pro-life voters for defending Planned Parenthood — despite saying he is pro-life and wants to defund the abortion business. Trump claimed that planned Parenthood “helps millions of women” such as women with breast cancer...</p>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-xs">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>(116)
+                </button>
+                <button type="button" class="btn btn-default btn-xs">Comment(86)</button>
+            </div>
+        </div>
+
+
+
+        <div class="newsresult">
+            <div class="row">
+                <div class="col-md-2">
+                    <img  class="photo" src="../img/Marco_Rubio.jpg">
+                </div>
+                <div class="col-md-10">
+                    <div class="newshead">
+                        <a href="News.html">
+                            <h2 href="">Marco Rubio Made Some Extreme Statements About Abortion At The GOP Debate</h2>
+                        </a>
+                        <h5 class="AuthorInfo">By Meghan Demaria <span style="color: #B8B8B8;">Refinery29| Feb. 6, 2016</span></h5>
+                    </div>
+                </div>
+            </div>
+            <p>During Saturday's GOP primary debate in New Hampshire, Florida Senator Marco Rubio suggested that former Secretary of State and Democratic presidential candidate Hillary Clinton supports abortion up until a woman's due date...</p>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-xs">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>(112)
+                </button>
+                <button type="button" class="btn btn-default btn-xs">Comment(134)</button>
+            </div>
+       </div>
+
+       <ul class="pagination">
+           <li><a href="#">1</a></li>
+           <li><a href="#">2</a></li>
+           <li><a href="#">3</a></li>
+           <li><a href="#">4</a></li>
+           <li><a href="#">5</a></li>
+           <li><a href="#">Next</a></li>
+      </ul>
+       
+    </div>
+</body>
+</html>
