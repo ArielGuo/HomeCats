@@ -55,6 +55,15 @@
        left:500px;
        top: -10px;
        }
+
+       #facebook {
+         position: relative;
+         top: 7px;
+       }
+      #twitter {
+         position: relative;
+         top: 7px;
+       }
     </style>
   </head>
 
@@ -222,11 +231,36 @@
 <div class="container">
     <div class="container-fluid bg-2 text-center">
         <div class="text-right">
-            <button type="button" class="btn btn-success btn-xs">Submit</button>          
+            <!-- <button type="button" class="btn btn-success btn-xs">Submit</button> -->
+            <!-- Trigger the modal with a button -->
+  <input type="image" src="../img/fb.png" height="22" id="facebook" disabled="disabled">
+  <input type="image" src="../img/twi.png" height="22" id="twitter" disabled="disabled">
+ <!-- <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal">
+   <img src="../img/fb.png" alt="fb" height="22" style="position: relative"></button>
+ <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal">Submit</button> -->
+ <button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal">Submit</button>
+
+ <!-- Modal -->
+ <div class="modal fade" id="myModal" role="dialog">
+   <div class="modal-dialog ">
+     <!-- Modal content-->
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+       </div>
+       <div class="modal-body text-center">
+         <h3>Submit Successfully!</h3>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+   </div>
+ </div>
         </div>
     </div>
 </div>
-
+<p></P>
 
 
   </body>
