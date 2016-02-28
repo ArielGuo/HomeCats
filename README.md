@@ -23,3 +23,7 @@ Features
   - Personal Page
     - Information displayed by category.
     - Comment zone on each candidate.
+- Vertical Prototype
+  - Search "Hillary Clinton" on homepage.
+  - On search results page, click and enter into Hillary Clinton's personal page.
+  - On personal page, comment on her in the bottom comment zone.
