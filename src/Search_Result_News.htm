@@ -44,6 +44,11 @@
     div.container {
         width=90%;
     }
+    div.dropdown {
+        postion:relative;
+        top:18px;
+        float: right;
+    }
     img{
         position: relative;
         float: left;
@@ -110,16 +115,30 @@
     </nav>
 
     <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="pagination">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">Next</a></li>
+                </ul>
+            </div>
         
-        <ul class="pagination">
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">Next</a></li>
-        </ul>
-        
+            <div class="col-md-6">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sorted By<span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Likes</a></li>
+                        <li><a href="#">Times</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
         <div class="newsresult">
             <div class="row">
                 <div class="col-md-2">
