@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HomePage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<script>
+// On mouse-over, execute myFunction
+function mySearch() {
+  var box = document.getElementById("sear");
+
+  switch (box.value) {
+    case 'Hillary Clinton':
+      window.open("Search_Result_Hillary.htm",'_blank','resizable=yes')
+    case 'Women and Children':
+      window.open("Search_Result_News.htm",'_blank','resizable=yes')
+    default :
+      return;
+  }
+}
+
+function mySignUp(){
+  alert('Coming Soon !');
+}
+
+function myLogin(){
+  alert('Coming Soon !');
+}
+
+</script>
+
+
+
+  <style>
+
+.navbar-default {
+  background-color: #B6D296;
+  border-color: #B6D296;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+
+.navbar-default .navbar-brand:focus {
+  color: #ecdbff;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #B6D296;
+    border-color: #B6D296;
+}
+.text-primary,
+.text-primary:hover,
+.text-primary:active,
+.text-primary:visited,
+.text-primary:focus {
+    color: #B6D296;
+    font-size: 56px;
+}
+
+
+#logo {
+  left: 38%;
+  top: 20%;
+  position: absolute;
+}
+
+form {
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+button {
+  width: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+    /* Add a gray background color and some padding to the footer */
+  footer {
+	  background-color: #B6D296;
+    padding: 25px;
+    }
+  </style>
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      </button>
+      <a class="navbar-brand" href="#" onclick="mySignUp()">Contact Us</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user" id="signup" onclick="mySignUp()"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in" id="login" onclick="myLogin()"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<br>
+<br>
+<br>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 " id="logo"><img src="../img/logo.png" class="img-rounded" alt="Cinque Terre" width="244.8" height="185.6"></div>
+    <div class="col-md-4"></div>
+</div>
+
+<br><br><br><br><br><br><br><br><br>
+
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <label for="sear"></label>
+      <form method="post" action="">
+        <input class="form-control input-lg" id="sear" type="text" value="">
+        <button type="button" class="btn btn-primary btn-lg" onclick="mySearch()">
+          <span class="glyphicon glyphicon-search"></span>
+        </button>
+      </form>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="container-fluid text-primary text-left">
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-5">
+      <h1><strong>&nbsp&nbsp&nbsp&nbsp123 &nbsp &nbsp &nbsp     4   &nbsp &nbsp &nbsp  &nbsp&nbsp   56 </h1>
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid text-success text-left">
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-5">
+      <h3>&nbsp&nbsp&nbsp&nbsp&nbsp Days &nbsp &nbsp &nbsp &nbsp  Hours &nbsp &nbsp  &nbsp Minutes</h3>
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-primary text-left">
+  <div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-5">
+      <h3><small>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspleft until 2016 United States Presidential Election</small></h3>
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
