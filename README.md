@@ -11,9 +11,15 @@ Features
 - Horizontal prototype
   - Homepage
     - Search issues or people through search bar.
-    - Sign up or login to accounts.
-  - Search Results Page for "Women and Childern"
+    - Sign up or login to users' accounts.
+  - Search Results Page for "Women and Childern" and "Hillary Clinton"
     - Homepage button on top-left.
-    - Sort news by different criterion.
+    - Sort news by different criteria.
     - Enter specific news page.
-  - Search Results Page for
+    - Personal page on top when search for candidates' name.
+  - News Page
+    - Display news content.
+    - Comment zone of each piece of news.
+  - Personal Page
+    - Information displayed by category.
+    - Comment zone on each candidate.
