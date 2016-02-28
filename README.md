@@ -10,4 +10,10 @@ Features
 ========
 - Horizontal prototype
   - Homepage
-    - Search Issues or People through 
+    - Search issues or people through search bar.
+    - Sign up or login to accounts.
+  - Search Results Page for "Women and Childern"
+    - Homepage button on top-left.
+    - Sort news by different criterion.
+    - Enter specific news page.
+  - Search Results Page for
