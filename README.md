@@ -6,7 +6,8 @@ Introduction
 =============
 This is mainly a user interface of the proposed ElecBoard website. It has limited functions and sample data as well. ElecBoard is designed to provide voters and anyone who may concerns with presidential candidates' information. Specifically, It offers news of certain issues or certain candidates. For each candidate, it has a personal page which displays information about him or her which contains background, experiences, opinions and news. To engage people in the discussion of presidential candidates, ElecBoard offers bbs based comment zones and social network sharing features.
 
-User Tasks and Features
-=================
-- Homepage:
-- 
+Features
+========
+- Horizontal prototype
+  - Homepage
+    - Search Issues or People through 
